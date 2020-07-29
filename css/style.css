@@ -1,0 +1,26 @@
+#planPainter .plan {
+  position: relative; }
+  #planPainter .plan img {
+    width: 100%; }
+  #planPainter .plan svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: crosshair; }
+    #planPainter .plan svg rect {
+      stroke-width: 2;
+      stroke: black;
+      fill: white; }
+      #planPainter .plan svg rect#rectOne {
+        fill: cyan; }
+    #planPainter .plan svg polygon, #planPainter .plan svg polyline {
+      stroke-width: 2;
+      stroke: blue;
+      fill: rgba(97, 97, 97, 0.3); }
+      #planPainter .plan svg polygon.hover, #planPainter .plan svg polyline.hover {
+        fill: rgba(255, 255, 0, 0.3); }
+    #planPainter .plan svg text {
+      font-size: 30px;
+      font-weight: 600; }
+
+/*# sourceMappingURL=style.css.map */

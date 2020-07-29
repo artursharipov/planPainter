@@ -1,0 +1,36 @@
+#planPainter{
+    .plan{
+        position: relative; 
+        img{
+            width: 100%;
+        }
+        svg{
+            position: absolute;
+            top:0;
+            left:0;
+            cursor: crosshair;
+        
+            rect{
+                stroke-width: 2;
+                stroke: black;
+                fill: white;
+                
+                &#rectOne{
+                    fill: cyan;
+                }
+            }
+            polygon, polyline{
+                stroke-width: 2;
+                stroke: blue;
+                fill: rgba(97, 97, 97, 0.3);
+                &.hover{
+                    fill: rgba(255, 255, 0, 0.3)
+                }
+            }
+            text{
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }    
+}
